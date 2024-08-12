@@ -1,55 +1,88 @@
 [
-    //
-    // Civilian
-    //
-    {   //Tribe
-        "name": "Tribe",
-        "unitType": "Civilian",
-        "movement": 1,
-        "cost": 100,
-        "uniques": [
-            "Founds a new city <by consuming this unit>",
+	{
+		"name":"Settler",
+		"unitType":"Civilian",
+		"movement":1,
+		"cost":100,
+		"uniques":[
+			"Founds a new city <by consuming this unit>",
 			"Excess Food converted to Production when under construction",
 			"Requires at least [2] population"
-        ]
-    },
-    {   //Tribesmen
-		"name": "Tribesmen",
-		"unitType": "Civilian",
-		"movement": 1,
-		"uniques": [
-			"Can build [Land] improvements on tiles"
-		],
-		"cost": 100
+		]
 	},
-
-    //
-    // Irregular Infantry
-    //
-    {   //Hunters
-        "name": "Hunters",
-        "unitType": "Irregular Infantry",
-        "movement": 1,
-        "strength": 1,
-        "cost": 100,
-        "uniques": [
-			"Never appears as a Barbarian unit"
+	{
+		"name":"Worker",
+		"unitType":"Civilian",
+		"movement":1,
+		"cost":100,
+		"uniques":[
+			"Can build [Land] improvements on tiles"
 		]
-    },
-
-    //
-    // Barbarians
-    //
-    {   //Wolves
-        "name": "Wolves",
-		"unitType": "Animals",
-		"uniqueTo": "Barbarians",
-		"movement": 2,
-		"strength": 1,
-		"cost": 100,
-		"uniques": [
-			"No defensive terrain bonus",
-			"Can move after attacking"
+	},
+	{
+		"name":"Clubber",
+		"unitType":"Melee Infantry",
+		"movement":2,
+		"strength":1,
+		"cost":10,
+		"uniques":[
+			
 		]
-    }
+	},
+	{
+		"name":"Swordman",
+		"unitType":"Melee Infantry",
+		"movement":2,
+		"strength":2,
+		"cost":50,
+		"uniques":[
+			
+		]
+	},
+	{
+		"name":"Musketman",
+		"unitType":"Melee Infantry",
+		"movement":2,
+		"strength":5,
+		"cost":100,
+		"uniques":[
+			
+		]
+	},
+	{
+		"name":"Slinger",
+		"unitType":"Ranged Infantry",
+		"movement":2,
+		"strength":1,
+		"rangedStrength":2,
+		"range":1,
+		"cost":20,
+		"uniques":[
+			
+		]
+	},
+	{
+		"name":"Bowman",
+		"unitType":"Ranged Infantry",
+		"movement":2,
+		"strength":2,
+		"rangedStrength":5,
+		"range":1,
+		"cost":60,
+		"uniques":[
+			
+		]
+	},
+	{
+		"name":"Crossbowman",
+		"unitType":"Ranged Infantry",
+		"movement":2,
+		"strength":5,
+		"rangedStrength":10,
+		"range":1,
+		"cost":120,
+		"uniques":[
+			
+		]
+	}
 ]
