@@ -5,7 +5,7 @@
 		"startingSettlerCount": 1,
 		"startingSettlerUnit": "Settler",
 		"startingWorkerCount": 0,
-		"startingSettlerUnit": "Worker",
+		"startingWorkerUnit": "Worker",
 		"startingMilitaryUnitCount": 1,
 		"startingMilitaryUnit": "Clubber",
 		"settlerPopulation": 1,
