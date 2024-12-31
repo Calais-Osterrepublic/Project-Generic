@@ -1,4 +1,2 @@
-# Codename: Origins.
-Intense prototyping, download with caution.
-
-Main aim is to cover more prehistoric and mystic/mythologic branches than scientific or real history.
+# Generico Ruleset
+The most raw ruleset; the most simple playable "gamemode" I can imagine
