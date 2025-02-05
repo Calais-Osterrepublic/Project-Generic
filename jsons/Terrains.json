@@ -1,31 +1,40 @@
 [
-	//
-    //	Base terrains
-	//
-    {
-        "name": "Ocean",
-		"type": "Water",
-		"movementCost": 1,
-		"RGB": [2, 104, 100],
-		"uniques": [
-
+	{
+		"name":"Ocean",
+		"type":"Water",
+		"movementCost":1,
+		"RGB":[
+			2,
+			104,
+			100
+		],
+		"uniques":[
+			
 		]
-    },
-    {
-		"name": "Coast",
-		"type": "Water",
-		"movementCost": 1,
-		"RGB": [42, 206, 179],
-		"uniques": [
+	},
+	{
+		"name":"Coast",
+		"type":"Water",
+		"movementCost":1,
+		"RGB":[
+			42,
+			206,
+			179
+		],
+		"uniques":[
 			"Every [60] tiles with this terrain will receive a major deposit of a strategic resource."
 		]
 	},
 	{
-		"name": "Snow",
-		"type": "Land",
-		"movementCost": 1,
-		"RGB": [231, 242, 249],
-		"uniques": [
+		"name":"Snow",
+		"type":"Land",
+		"movementCost":1,
+		"RGB":[
+			231,
+			242,
+			249
+		],
+		"uniques":[
 			"Occurs at temperature between [-1] and [-0.7] and humidity between [0] and [1]",
 			"Always Fertility [-1] for Map Generation",
 			"Considered [Undesirable] when determining start locations",
@@ -33,12 +42,16 @@
 		]
 	},
 	{
-		"name": "Tundra",
-		"type": "Land",
-		"movementCost": 1,
-		"defenceBonus": -0.2,
-		"RGB": [189, 204, 191],
-		"uniques": [
+		"name":"Tundra",
+		"type":"Land",
+		"movementCost":1,
+		"defenceBonus":-0.2,
+		"RGB":[
+			189,
+			204,
+			191
+		],
+		"uniques":[
 			"Occurs at temperature between [-0.8] and [-0.6] and humidity between [0] and [1]",
 			"Considered [Desirable] when determining start locations",
 			"Considered [Food] when determining start locations",
@@ -46,81 +59,101 @@
 		]
 	},
 	{
-		"name": "Grassland",
-		"type": "Land",
-		"movementCost": 1,
-		"RGB": [107, 214, 152],
-		"uniques": [
+		"name":"Grassland",
+		"type":"Land",
+		"movementCost":1,
+		"RGB":[
+			107,
+			214,
+			152
+		],
+		"uniques":[
 			"Occurs at temperature between [-0.7] and [0.6] and humidity between [0] and [1]",
 			"Considered [Food] when determining start locations",
 			"Every [33] tiles with this terrain will receive a major deposit of a strategic resource."
 		]
 	},
 	{
-		"name": "Plains",
-		"type": "Land",
-		"movementCost": 1,
-		"RGB": [61, 142, 93],
-		"uniques": [
+		"name":"Plains",
+		"type":"Land",
+		"movementCost":1,
+		"RGB":[
+			61,
+			142,
+			93
+		],
+		"uniques":[
 			"Occurs at temperature between [0.5] and [0.8] and humidity between [0] and [1]",
 			"Considered [Desirable] when determining start locations",
 			"Every [33] tiles with this terrain will receive a major deposit of a strategic resource."
 		]
 	},
 	{
-		"name": "Desert",
-		"type": "Land",
-		"movementCost": 1,
-		"defenceBonus": -0.2,
-		"RGB": [230, 230, 113],
-		"uniques": [
+		"name":"Desert",
+		"type":"Land",
+		"movementCost":1,
+		"defenceBonus":-0.2,
+		"RGB":[
+			230,
+			230,
+			113
+		],
+		"uniques":[
 			"Occurs at temperature between [0.7] and [1] and humidity between [0] and [1]",
 			"Considered [Food] when determining start locations",
 			"Every [33] tiles with this terrain will receive a major deposit of a strategic resource."
 		]
 	},
 	{
-		"name": "Mountain",
-		"type": "Land",
-		"movementCost": 3,
-		"defenceBonus": 0.25,
-		"RGB": [120, 120, 120],
-		"uniques": [
+		"name":"Mountain",
+		"type":"Land",
+		"movementCost":3,
+		"defenceBonus":0.25,
+		"RGB":[
+			120,
+			120,
+			120
+		],
+		"uniques":[
 			"Rough terrain",
 			"Has an elevation of [4] for visibility calculations",
 			"Occurs in chains at high elevations"
 		]
 	},
 	{
-		"name": "Lakes",
-		"type": "Water",
-		"RGB": [123, 202, 226],
-		"uniques": [
+		"name":"Lakes",
+		"type":"Water",
+		"RGB":[
+			123,
+			202,
+			226
+		],
+		"uniques":[
 			"Occurs at temperature between [-1] and [1] and humidity between [0.7] and [1]",
 			"Fresh water",
 			"Considered [Food] when determining start locations",
 			"Considered [Desirable] when determining start locations"
 		]
 	},
-
-	//
-	//	Terrain Features
-	//
 	{
-		"name": "Hill",
-		"type": "TerrainFeature",
-		"movementCost": 2,
-		"overrideStats": true,
-		"defenceBonus": 0.1,
-		"RGB": [105, 125, 72],
-		"occursOn": [
+		"name":"Hill",
+		"type":"TerrainFeature",
+		"movementCost":2,
+		"overrideStats":true,
+		"defenceBonus":0.1,
+		"RGB":[
+			105,
+			125,
+			72
+		],
+		"occursOn":[
 			"Grassland",
 			"Desert",
 			"Tundra",
 			"Snow",
 			"Plains"
 		],
-		"uniques": [
+		"uniques":[
 			"Rough terrain",
 			"[+5] Strength for cities built on this terrain",
 			"Has an elevation of [2] for visibility calculations",
@@ -132,19 +165,19 @@
 		]
 	},
 	{
-		"name": "Forest",
-		"type": "TerrainFeature",
-		"movementCost": 2,
-		"overrideStats": true,
-		"unbuildable": true,
-		"defenceBonus": 0.15,
-		"occursOn": [
+		"name":"Forest",
+		"type":"TerrainFeature",
+		"movementCost":2,
+		"overrideStats":true,
+		"unbuildable":true,
+		"defenceBonus":0.15,
+		"occursOn":[
 			"Grassland",
 			"Tundra",
 			"Snow",
 			"Plains"
 		],
-		"uniques": [
+		"uniques":[
 			"Vegetation",
 			"Rough terrain",
 			"Provides a one-time Production bonus to the closest city when cut down",
@@ -155,15 +188,15 @@
 		]
 	},
 	{
-		"name": "Ice",
-		"type": "TerrainFeature",
-		"overrideStats": true,
-		"impassable": true,
-		"occursOn": [
+		"name":"Ice",
+		"type":"TerrainFeature",
+		"overrideStats":true,
+		"impassable":true,
+		"occursOn":[
 			"Ocean",
 			"Coast"
 		],
-		"uniques": [
+		"uniques":[
 			"Rough terrain",
 			"Occurs at temperature between [-1] and [-0.8] and humidity between [0] and [1]",
 			"Considered [Undesirable] when determining start locations"
