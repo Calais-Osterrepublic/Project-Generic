@@ -52,11 +52,17 @@
 	{
 		"name": "Weapons",
 		"resourceType": "Strategic",
-		"production": 1
+		"production": 1,
+		"uniques": [
+			"Stockpiled"
+		]
 	},
 	{
 		"name": "Tools",
 		"resourceType": "Strategic",
-		"production": 1
+		"production": 1,
+		"uniques": [
+			"Stockpiled"
+		]
 	},
 ]
