@@ -39,7 +39,7 @@
 			"Tundra",
 			"Desert",
 			"Plains",
-			"Hill"
+			"Hill" 
 		],
 		"uniques":[
 			"Generated on every [45] tiles <in [{Featureless} {Tundra}] tiles>",
