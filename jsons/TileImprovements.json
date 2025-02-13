@@ -1,83 +1,75 @@
 [
-	//
-	//	Bonus
-	//
-    {	//	Hunting Grounds
-		"name": "Hunting Grounds",
-		"terrainsCanBeBuiltOn": [
+	{
+		"name":"Hunting Grounds",
+		"terrainsCanBeBuiltOn":[
 			"Grassland",
 			"Plains",
 			"Tundra",
 			"Desert"
 		],
-		"food": 1,
-		"turnsToBuild": 10,
-		"techRequired": "Tribal Organisation",
-		"uniques": [
+		"food":1,
+		"turnsToBuild":10,
+		"techRequired":"Tribal Organisation",
+		"uniques":[
 			"Can only be built to improve a resource"
 		],
-		"shortcutKey": "F"
+		"shortcutKey":"F"
 	},
-	{	//	Stone Gathering
-		"name": "Stone Gathering",
-		"terrainsCanBeBuiltOn": [
+	{
+		"name":"Stone Gathering",
+		"terrainsCanBeBuiltOn":[
 			"Hill",
 			"Mountain",
 			"Plains",
 			"Desert"
 		],
-		"turnsToBuild": 10,
-		"techRequired": "Primitive Tools",
-		"uniques": [
+		"turnsToBuild":10,
+		"techRequired":"Primitive Tools",
+		"uniques":[
 			"Can only be built to improve a resource"
 		],
-		"shortcutKey": "F"
+		"shortcutKey":"F"
 	},
-
-	//
-	// Etc
-	//
-	{	//	Ancient ruins
-		//"name": "Ancient ruins",
-		"name": "Curiosity",
-		"terrainsCanBeBuiltOn": [
+	{
+		"name":"Curiosity",
+		"terrainsCanBeBuiltOn":[
 			"Land",
 			"Forest"
 		],
-		"uniques": [
-			"Unpillagable", 
+		"uniques":[
+			"Unpillagable",
 			"Provides a random bonus when entered",
 			"Unbuildable"
 		]
 	},
-	{	//	City ruins
-		"name": "City ruins",
-		"terrainsCanBeBuiltOn": [
+	{
+		"name":"City ruins",
+		"terrainsCanBeBuiltOn":[
 			"Land"
 		],
-		"uniques": [
+		"uniques":[
 			"Unpillagable",
 			"Unbuildable",
 			"Will be replaced by automated workers"
 		]
 	},
-	{	//	City center
-		"name": "City center",
-		"terrainsCanBeBuiltOn": [
+	{
+		"name":"City center",
+		"terrainsCanBeBuiltOn":[
 			"Land"
 		],
-		"uniques": [
-			"Unpillagable", 
+		"uniques":[
+			"Unpillagable",
 			"Irremovable",
 			"Unbuildable"
 		]
 	},
-	{	//	Barbarian encampment
-		"name": "Barbarian encampment",
-		"terrainsCanBeBuiltOn": [
+	{
+		"name":"Barbarian encampment",
+		"terrainsCanBeBuiltOn":[
 			"Land"
 		],
-		"uniques": [
+		"uniques":[
 			"Unpillagable",
 			"Unbuildable"
 		]
