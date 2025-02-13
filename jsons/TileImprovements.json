@@ -1,45 +1,53 @@
 [
 	{
-		"name":"Hunting Grounds",
+		"name":"Farm",
 		"terrainsCanBeBuiltOn":[
-			"Grassland",
 			"Plains",
-			"Tundra",
-			"Desert"
+			"Grassland",
+			"Desert",
+			"Flood plains"
 		],
 		"food":1,
-		"turnsToBuild":10,
-		"techRequired":"Tribal Organisation",
+		"turnsToBuild":7,
+		"techRequired":"Agriculture",
 		"uniques":[
-			"Can only be built to improve a resource"
-		],
-		"shortcutKey":"F"
+			"Can also be built on tiles adjacent to fresh water",
+			"Pillaging this improvement yields approximately [+18 Gold]"
+		]
 	},
 	{
-		"name":"Stone Gathering",
-		"terrainsCanBeBuiltOn":[
-			"Hill",
-			"Mountain",
-			"Plains",
-			"Desert"
-		],
-		"turnsToBuild":10,
-		"techRequired":"Primitive Tools",
+		"name":"Camp",
+		"turnsToBuild":7,
+		"techRequired":"Trapping",
 		"uniques":[
-			"Can only be built to improve a resource"
-		],
-		"shortcutKey":"F"
+			"Does not need removal of [Forest]",
+			"Does not need removal of [Jungle]",
+			"Can only be built to improve a resource",
+			"Pillaging this improvement yields approximately [+10 Gold]"
+		]
 	},
 	{
-		"name":"Curiosity",
+		"name":"Mine",
 		"terrainsCanBeBuiltOn":[
-			"Land",
-			"Forest"
+			"Hill"
+		],
+		"production":1,
+		"turnsToBuild":7,
+		"techRequired":"Mining",
+		"uniques":[
+			"Pillaging this improvement yields approximately [+20 Gold]"
+		]
+	},
+	{
+		"name":"Ancient ruins",
+		"terrainsCanBeBuiltOn":[
+			"Land"
 		],
 		"uniques":[
 			"Unpillagable",
 			"Provides a random bonus when entered",
-			"Unbuildable"
+			"Unbuildable",
+			"Comment [Please find a way for this to be translated into Curiosity.]"
 		]
 	},
 	{
@@ -71,6 +79,7 @@
 		],
 		"uniques":[
 			"Unpillagable",
+			"Provides a random bonus when entered",
 			"Unbuildable"
 		]
 	}
