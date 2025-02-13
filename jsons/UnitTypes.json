@@ -4,11 +4,31 @@
         "movementType": "Land"
     },
     {
-        "name": "Irregular Infantry",
+        "name": "Civilian Water",
+        "movementType": "Water"
+    },
+    
+    
+    {
+        "name": "Land Melee",
         "movementType": "Land"
     },
     {
-        "name": "Animals",
+        "name": "Land Ranged",
         "movementType": "Land"
-    }
+    },
+
+    {
+        "name": "Water Melee",
+        "movementType": "Water"
+    },
+    {
+        "name": "Water Ranged",
+        "movementType": "Water"
+    },
+
+    {
+        "name": "Air",
+        "movementType": "Air"
+    }  
 ]
