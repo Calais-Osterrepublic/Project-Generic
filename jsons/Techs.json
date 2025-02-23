@@ -1,16 +1,14 @@
 [
-	//
-	//	Primeval era
-	//
-    {	//	Tribal Organisation
+    {	
         "columnNumber": 0,
-		"era": "Primeval Era",
-		"techCost": 100,
+		"era": "Worldly Era",
+		"techCost": 10,
 		"buildingCost": 100,
+		"wonderCost": 10,
 		"techs": [
 			{
-				"name": "Tribal Organisation",
-				"row": 1,
+				"name": "First Star",
+				"row": 4,
 				"quote": "",
 				"uniques": [
 					"Starting tech"
@@ -18,291 +16,254 @@
 			}
 		]
     },
-	{	//	Gathering
+	{	
 		"columnNumber": 1,
-		"era": "Primeval Era",
-		"techCost": 100,
+		"era": "Worldly Era",
+		"techCost": 50,
 		"buildingCost": 100,
+		"wonderCost": 20,
 		"techs": [
 			{
-				"name": "Gathering",
+				"name": "Armed Forces",
 				"row": 3,
 				"quote": "",
 				"prerequisites": [
-					"Tribal Organisation"
-				],
-				"uniques": [
-					"[+2 Food] from every [Gatherer]"
+					"First Star"
 				]
-			}
-		]
-	},
-	{	//	Primitive Tools
-		"columnNumber": 1,
-		"era": "Primeval Era",
-		"techCost": 100,
-		"buildingCost": 100,
-		"techs": [
+			},
 			{
-				"name": "Primitive Tools",
-				"row": 5,
-				"quote": "",
-				"prerequisites": [
-					"Tribal Organisation"
-				],
-				"uniques": [
-
-				]
-			}
-		]
-	},
-	{	//	Wisdom Accumulation
-		"columnNumber": 1,
-		"era": "Primeval Era",
-		"techCost": 100,
-		"buildingCost": 100,
-		"techs": [
-			{
-				"name": "Wisdom Accumulation",
-				"row": 7,
-				"quote": "",
-				"prerequisites": [
-					"Tribal Organisation"
-				],
-				"uniques": [
-					"[+1 Culture] from every [Chieftain]"
-				]
-			}
-		]
-	},
-	{	//	Exploring
-		"columnNumber": 2,
-		"era": "Primeval Era",
-		"techCost": 100,
-		"buildingCost": 100,
-		"techs": [
-			{
-				"name": "Exploring",
-				"row": 3,
-				"quote": "",
-				"prerequisites": [
-					"Gathering"
-				],
-				"uniques": [
-					"[+1] Movement <for [Hunters] units>"
-				]
-			}
-		]
-	},
-	{	//	Primitive Hunting Weapons
-		"columnNumber": 2,
-		"era": "Primeval Era",
-		"techCost": 100,
-		"buildingCost": 100,
-		"techs": [
-			{
-				"name": "Primitive Hunting Weapons",
+				"name": "Systemic Affairs",
 				"row": 4,
 				"quote": "",
 				"prerequisites": [
-					"Primitive Tools"
-				],
-				"uniques": [
-					"[+20]% Strength <for [Hunters] units> <vs [Animals] units>"
+					"First Star"
 				]
-			}
-		]
-	},
-	{	//	Crafting Skills
-		"columnNumber": 2,
-		"era": "Primeval Era",
-		"techCost": 100,
-		"buildingCost": 100,
-		"techs": [
+			},
 			{
-				"name": "Crafting Skills",
-				"row": 6,
+				"name": "Internal Infrastructure",
+				"row": 5,
 				"quote": "",
 				"prerequisites": [
-					"Primitive Tools",
-					"Wisdom Accumulation"
-				],
-				"uniques": [
-
+					"First Star"
 				]
 			}
+
 		]
 	},
-	{	//	Spiritual Guidance
+	{	
 		"columnNumber": 2,
-		"era": "Primeval Era",
+		"era": "Worldly Era",
 		"techCost": 100,
 		"buildingCost": 100,
+		"wonderCost": 30,
 		"techs": [
 			{
-				"name": "Spiritual Guidance",
-				"row": 7,
-				"quote": "",
-				"prerequisites": [
-					"Wisdom Accumulation"
-				],
-				"uniques": [
-
-				]
-			}
-		]
-	},
-	{	//	Primitive Hierarchy
-		"columnNumber": 4,
-		"era": "Primeval Era",
-		"techCost": 100,
-		"buildingCost": 100,
-		"techs": [
-			{
-				"name": "Primitive Hierarchy",
+				"name": "Surplus Range",
 				"row": 1,
 				"quote": "",
 				"prerequisites": [
-					"Tribal Organisation"
-				],
-				"uniques": [
-					"[+1 Gold] from every [Chieftain]"
+					"Armed Forces"
 				]
-			}
-		]
-	},
-	{	//	Animal study
-		"columnNumber": 3,
-		"era": "Primeval Era",
-		"techCost": 100,
-		"buildingCost": 100,
-		"techs": [
+			},
 			{
-				"name": "Animal study",
+				"name": "Surplus Melee",
+				"row": 2,
+				"quote": "",
+				"prerequisites": [
+					"Armed Forces"
+				]
+			},
+			{
+				"name": "Civil Governance",
 				"row": 4,
 				"quote": "",
 				"prerequisites": [
-					"Primitive Hunting Weapons"
-				],
-				"uniques": [
-
+					"Systemic Affairs"
 				]
-			}
-		]
-	},
-	{	//	Craftsmanship
-		"columnNumber": 3,
-		"era": "Primeval Era",
-		"techCost": 100,
-		"buildingCost": 100,
-		"techs": [
+			},
 			{
-				"name": "Craftsmanship",
-				"row": 5,
+				"name": "Construction",
+				"row": 6,
 				"quote": "",
 				"prerequisites": [
-					"Crafting Skills"
-				],
-				"uniques": [
-
+					"Internal Infrastructure"
 				]
-			}
-		]
-	},
-	{	//	Rituals
-		"columnNumber": 3,
-		"era": "Primeval Era",
-		"techCost": 100,
-		"buildingCost": 100,
-		"techs": [
+			},
 			{
-				"name": "Rituals",
+				"name": "Coastal Operation",
 				"row": 7,
 				"quote": "",
 				"prerequisites": [
-					"Spiritual Guidance",
-					"Crafting Skills"
-				],
-				"uniques": [
-
+					"Internal Infrastructure"
 				]
 			}
 		]
 	},
-	{	//	Animal Taming
-		"columnNumber": 4,
-		"era": "Primeval Era",
-		"techCost": 100,
-		"buildingCost": 100,
+	{	
+		"columnNumber": 3,
+		"era": "Worldly Era",
+		"techCost": 200,
+		"buildingCost": 110,
+		"wonderCost": 40,
 		"techs": [
 			{
-				"name": "Animal Taming",
+				"name": "Elite Ranged",
+				"row": 1,
+				"quote": "",
+				"prerequisites": [
+					"Surplus Ranged"
+				]
+			},
+			{
+				"name": "Elite Melee",
+				"row": 2,
+				"quote": "",
+				"prerequisites": [
+					"Surplus Melee"
+				]
+			},
+			{
+				"name": "Civil Administration",
+				"row": 3,
+				"quote": "",
+				"prerequisites": [
+					"Civil Governance"
+				]
+			},
+			{
+				"name": "Scientific Method",
 				"row": 4,
 				"quote": "",
 				"prerequisites": [
-					"Animal study"
-				],
-				"uniques": [
-
+					"Civil Governance"
 				]
-			}
-		]
-	},
-	{	//	Division of Labor
-		"columnNumber": 4,
-		"era": "Primeval Era",
-		"techCost": 100,
-		"buildingCost": 100,
-		"techs": [
+			},
 			{
-				"name": "Division of Labor",
+				"name": "Central Planning",
 				"row": 5,
 				"quote": "",
 				"prerequisites": [
-					"Craftsmanship"
-				],
-				"uniques": [
-
+					"Civil Governance"
 				]
-			}
-		]
-	},
-	{	//	Belief
-		"columnNumber": 4,
-		"era": "Primeval Era",
-		"techCost": 100,
-		"buildingCost": 100,
-		"techs": [
+			},
 			{
-				"name": "Belief",
+				"name": "Engineering",
+				"row": 6,
+				"quote": "",
+				"prerequisites": [
+					"Construction"
+				]
+			},
+			{
+				"name": "Blue Charters",
 				"row": 7,
 				"quote": "",
 				"prerequisites": [
-					"Rituals"
-				],
-				"uniques": [
-
+					"Coastal Operation"
 				]
 			}
 		]
 	},
-	{	//	Spiritual Contacts
+	{	
 		"columnNumber": 4,
-		"era": "Primeval Era",
-		"techCost": 100,
-		"buildingCost": 100,
+		"era": "Worldly Era",
+		"techCost": 300,
+		"buildingCost": 220,
+		"wonderCost": 50,
 		"techs": [
 			{
-				"name": "Spiritual Contacts",
-				"row": 8,
+				"name": "Standard Ranged",
+				"row": 1,
 				"quote": "",
 				"prerequisites": [
-					"Rituals"
-				],
-				"uniques": [
-					"Only available <after adopting [Mysticism]>"
+					"Elite Ranged"
+				]
+			},
+			{
+				"name": "Standard Melee",
+				"row": 2,
+				"quote": "",
+				"prerequisites": [
+					"Elite Melee"
+				]
+			},
+			{
+				"name": "Advanced Communication",
+				"row": 3,
+				"quote": "",
+				"prerequisites": [
+					"Civil Administration"
+				]
+			},
+			{
+				"name": "Chemistry",
+				"row": 4,
+				"quote": "",
+				"prerequisites": [
+					"Scientific Method"
+				]
+			},
+			{
+				"name": "Advanced Zoning",
+				"row": 5,
+				"quote": "",
+				"prerequisites": [
+					"Central Planning"
+				]
+			},
+			{
+				"name": "Advanced Industry",
+				"row": 6,
+				"quote": "",
+				"prerequisites": [
+					"Engineering"
+				]
+			},
+			{
+				"name": "Naval Tactics",
+				"row": 7,
+				"quote": "",
+				"prerequisites": [
+					"Blue Charters"
 				]
 			}
 		]
-	}
+	},
+    {	
+        "columnNumber": 5,
+		"era": "Worldly Era",
+		"techCost": 500,
+		"buildingCost": 300,
+		"wonderCost": 100,
+		"techs": [
+			{
+				"name": "Superweapons",
+				"row": 4,
+				"quote": "",
+                "prerequisites": [
+					"Advanced Communication",
+                    "Chemistry",
+                    "Advanced Zoning",
+                    "Advanced Industry"
+				]
+			}
+		]
+    },
+    {	
+        "columnNumber": 6,
+		"era": "Future Era",
+		"techCost": 1000,
+		"buildingCost": 1000,
+		"wonderCost": 1000,
+		"techs": [
+			{
+				"name": "Optimization",
+				"row": 4,
+				"quote": "",
+                "prerequisites": [
+					"Superweapons"
+				]
+			}
+		]
+    }
 ]
