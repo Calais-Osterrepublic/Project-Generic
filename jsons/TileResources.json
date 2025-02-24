@@ -103,13 +103,5 @@
 		"uniques": [
 			"Stockpiled"
 		]
-	},
-	{
-		"name": "Tools",
-		"resourceType": "Strategic",
-		"production": 1,
-		"uniques": [
-			"Stockpiled"
-		]
-	},
+	}
 ]
