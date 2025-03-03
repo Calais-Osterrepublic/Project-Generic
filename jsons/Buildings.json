@@ -47,5 +47,23 @@
 		  "Only available <when religion is enabled>"  
 		],
 		"requiredTech": "Internal Infrastructure"
+	},
+	
+	
+	{
+		"name": "Library",
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"uniques": ["[+1 Science] per [2] population [in this city]"],
+		"requiredTech": "Construction"
+	},
+	{
+		"name": "Courthouse",
+		"maintenance": 4,
+		"hurryCostModifier": 50,
+		"uniques": ["Remove extra unhappiness from annexed cities",
+			"Can only be built <in [Annexed] cities>"],
+		"requiredTech": "Civil Governance"
 	}
+	
 ]
