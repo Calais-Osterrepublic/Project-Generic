@@ -51,6 +51,30 @@
 	
 	
 	{
+		"name": "Courthouse",
+		"maintenance": 5,
+		"hurryCostModifier": 50,
+		"uniques": ["Remove extra unhappiness from annexed cities",
+			"Can only be built <in [Annexed] cities>"],
+		"requiredTech": "Civil Governance"
+	},
+	{
+		"name": "Mercenary Office",
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+		  "Comment [Enables purchase of Mercenary Units]"
+		],
+		"requiredTech": "Civil Governance"
+	},
+	{
+		"name": "Barracks",
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"uniques": ["New [Military] units start with [15] XP [in this city]", "Destroyed when the city is captured"],
+		"requiredTech": "Construction"
+	},
+	{
 		"name": "Library",
 		"hurryCostModifier": 25,
 		"maintenance": 1,
@@ -58,12 +82,16 @@
 		"requiredTech": "Construction"
 	},
 	{
-		"name": "Courthouse",
-		"maintenance": 4,
-		"hurryCostModifier": 50,
-		"uniques": ["Remove extra unhappiness from annexed cities",
-			"Can only be built <in [Annexed] cities>"],
-		"requiredTech": "Civil Governance"
+		"name": "Harbor",
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"uniques": [
+		  	"Comment [Enables purchase of Water Units]",
+			"[+1 Production] from [Water resource] tiles [in this city]",
+			"Connects trade routes over water",
+			"Must be next to [Coast]"
+		],
+		"requiredTech": "Coastal Operation"
 	}
 	
 ]
