@@ -3,7 +3,6 @@
     modUrl: "https://github.com/Monokiro/Origins",
     uniques:[
         "Can convert gold to science with sliders",
-        "Allow City States to spawn with additional units",
         "Can trade civilization introductions for [100] Gold",
         "Allow raze capital",
         "Allow raze holy city"
