@@ -100,5 +100,8 @@
 		"name": "Weapons",
 		"resourceType": "Strategic",
 		"production": 1
+		"uniques": [
+			"Stockpiled"
+		]
 	}
 ]
