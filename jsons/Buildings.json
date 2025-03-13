@@ -2,96 +2,355 @@
 	{
 		"name":"Command Center",
 		"isNationalWonder":true,
-		"production": 2,
-		"science": 2,
-		"gold": 2,
-		"culture": 2,
-		"cityStrength": 2,
+		"production":2,
+		"science":2,
+		"gold":2,
+		"culture":2,
+		"cityStrength":2,
 		"cost":1,
 		"uniques":[
 			"Indicates the capital city"
 		]
 	},
 	{
-		"name": "Monument",
-		"culture": 2,
-		"cost": 40,
-		"hurryCostModifier": 40,
-		"uniques": ["Destroyed when the city is captured"]
+		"name":"Monument",
+		"culture":2,
+		"cost":40,
+		"hurryCostModifier":40,
+		"uniques":[
+			"Destroyed when the city is captured"
+		]
 	},
 	{
-		"name": "Levy Office",
-		"maintenance": 1,
-		"hurryCostModifier": 25,
-		"uniques": [
-		  "Comment [Enables production of Levy Units]"
+		"name":"Levy Office",
+		"maintenance":1,
+		"hurryCostModifier":25,
+		"uniques":[
+			"Comment [Enables production of Levy Units]"
 		],
-		"requiredTech": "Internal Infrastructure"
+		"requiredTech":"Internal Infrastructure"
 	},
 	{
-		"name": "Granary",
-		"food": 2,
-		"maintenance": 1,
-		"hurryCostModifier": 25,
-		"uniques": [
-		  "[+1 Food] from [Farm] tiles [in this city]"
-			],
-		"requiredTech": "Internal Infrastructure"
-	},
-	{
-		"name": "Shrine",
-		"faith": 1,
-		"maintenance": 1,
-		"hurryCostModifier": 25,
-		"uniques": [
-		  "Only available <when religion is enabled>"  
+		"name":"Granary",
+		"food":2,
+		"maintenance":1,
+		"hurryCostModifier":25,
+		"uniques":[
+			"[+1 Food] from [Farm] tiles [in this city]"
 		],
-		"requiredTech": "Internal Infrastructure"
-	},
-	
-	
-	{
-		"name": "Courthouse",
-		"maintenance": 5,
-		"hurryCostModifier": 50,
-		"uniques": ["Remove extra unhappiness from annexed cities",
-			"Can only be built <in [Annexed] cities>"],
-		"requiredTech": "Civil Governance"
+		"requiredTech":"Internal Infrastructure"
 	},
 	{
-		"name": "Mercenary Office",
-		"maintenance": 1,
-		"hurryCostModifier": 25,
-		"uniques": [
-		  "Comment [Enables purchase of Mercenary Units]"
+		"name":"Shrine",
+		"faith":1,
+		"maintenance":1,
+		"hurryCostModifier":25,
+		"uniques":[
+			"Only available <when religion is enabled>"
 		],
-		"requiredTech": "Civil Governance"
+		"requiredTech":"Internal Infrastructure"
 	},
 	{
-		"name": "Barracks",
-		"hurryCostModifier": 25,
-		"maintenance": 1,
-		"uniques": ["New [Military] units start with [15] XP [in this city]", "Destroyed when the city is captured"],
-		"requiredTech": "Construction"
+		"name":"Forge",
+		"maintenance":1,
+		"hurryCostModifier":25,
+		"requiredNearbyImprovedResources":[
+			"Iron"
+		],
+		"uniques":[
+			"[+15]% Production when constructing [Land] units [in this city]",
+			"Instantly provides [10] [Weapons]"
+		],
+		"requiredTech":"Internal Infrastructure"
 	},
 	{
-		"name": "Library",
-		"hurryCostModifier": 25,
-		"maintenance": 1,
-		"uniques": ["[+1 Science] per [2] population [in this city]"],
-		"requiredTech": "Construction"
+		"name":"Courthouse",
+		"maintenance":5,
+		"hurryCostModifier":50,
+		"uniques":[
+			"Remove extra unhappiness from annexed cities",
+			"Can only be built <in [Annexed] cities>"
+		],
+		"requiredTech":"Civil Governance"
 	},
 	{
-		"name": "Harbor",
-		"maintenance": 2,
-		"hurryCostModifier": 25,
-		"uniques": [
-		  	"Comment [Enables purchase of Water Units]",
+		"name":"Mercenary Office",
+		"maintenance":1,
+		"specialistSlots":{
+			"Merchant":1
+		},
+		"hurryCostModifier":25,
+		"uniques":[
+			"Comment [Enables purchase of Mercenary Units]"
+		],
+		"requiredTech":"Civil Governance"
+	},
+	{
+		"name":"Barracks",
+		"hurryCostModifier":25,
+		"maintenance":1,
+		"uniques":[
+			"New [Military] units start with [15] XP [in this city]",
+			"Destroyed when the city is captured",
+			"Costs [10] [Weapons]"
+		],
+		"requiredTech":"Construction"
+	},
+	{
+		"name":"Colosseum",
+		"maintenance":1,
+		"happiness":2,
+		"hurryCostModifier":25,
+		"requiredTech":"Construction"
+	},
+	{
+		"name":"Library",
+		"hurryCostModifier":25,
+		"maintenance":1,
+		"uniques":[
+			"[+1 Science] per [2] population [in this city]"
+		],
+		"requiredTech":"Construction"
+	},
+	{
+		"name":"Harbor",
+		"maintenance":2,
+		"hurryCostModifier":25,
+		"uniques":[
+			"Comment [Enables purchase of Water Units]",
 			"[+1 Production] from [Water resource] tiles [in this city]",
 			"Connects trade routes over water",
 			"Must be next to [Coast]"
 		],
-		"requiredTech": "Coastal Operation"
+		"requiredTech":"Coastal Operation"
+	},
+	{
+		"name":"Recruitment Office",
+		"maintenance":1,
+		"hurryCostModifier":25,
+		"uniques":[
+			"Comment [Enables construction of Standard Units]"
+		],
+		"requiredTech":"Civil Governance"
+	},
+	{
+		"name":"Amphitheater",
+		"culture":3,
+		"specialistSlots":{
+			"Artist":1
+		},
+		"requiredBuilding":"Monument",
+		"maintenance":2,
+		"hurryCostModifier":25,
+		"uniques":[
+			"Destroyed when the city is captured"
+		],
+		"requiredTech":"Civil Governance"
+	},
+	{
+		"name":"University",
+		"maintenance":2,
+		"hurryCostModifier":15,
+		"percentStatBonus":{
+			"science":33
+		},
+		"specialistSlots":{
+			"Scientist":2
+		},
+		"requiredBuilding":"Library",
+		"uniques":[
+			"[+2 Science] from [unimproved] tiles [in this city]"
+		],
+		"requiredTech":"Scientific Theory"
+	},
+	{
+		"name":"Observatory",
+		"maintenance":0,
+		"hurryCostModifier":15,
+		"percentStatBonus":{
+			"science":50
+		},
+		"requiredBuilding":"Library",
+		"uniques":[
+			"Must be next to [Mountain]"
+		],
+		"requiredTech":"Scientific Theory"
+	},
+	{
+		"name":"Armory",
+		"hurryCostModifier":25,
+		"maintenance":1,
+		"requiredBuilding":"Barracks",
+		"uniques":[
+			"New [Military] units start with [15] XP [in this city]",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech":"Central Planning"
+	},
+	{
+		"name":"Garden",
+		"uniques":[
+			"[+25]% Great Person generation [in this city]",
+			"[+1 Food] from [Farm] tiles [in this city]"
+		],
+		"hurryCostModifier":25,
+		"maintenance":1,
+		"requiredTech":"Central Planning"
+	},
+	{
+		"name":"Aqueduct",
+		"maintenance":1,
+		"hurryCostModifier":0,
+		"uniques":[
+			"[40]% Food is carried over after population increases [in this city]"
+		],
+		"requiredTech":"Engineering"
+	},
+	{
+		"name":"Museum",
+		"culture":5,
+		"faith":3,
+		"specialistSlots":{
+			"Artist":2
+		},
+		"requiredBuilding":"Shrine",
+		"maintenance":3,
+		"hurryCostModifier":0,
+		"requiredTech":"Engineering",
+		"uniques":[
+			"Destroyed when the city is captured"
+		]
+	},
+	{
+		"name":"Lighthouse",
+		"cost":75,
+		"hurryCostModifier":25,
+		"maintenance":1,
+		"uniques":[
+			"Must be next to [Coast]",
+			"[+1 Food] from [Ocean] tiles [in this city]",
+			"[+1 Food] from [Coast] tiles [in this city]"
+		],
+		"requiredTech":"Blue Charters"
+	},
+	{
+		"name":"Seaport",
+		"hurryCostModifier":25,
+		"maintenance":3,
+		"requiredBuilding":"Harbor",
+		"uniques":[
+			"[+1 Production",
+			"Must be next to [Coast]",
+			"[+15]% Production when constructing [Water] units [in this city]"
+		],
+		"requiredTech":"Blue Charters"
+	},
+	{
+		"name":"Broadcast Tower",
+		"culture":3,
+		"faith":2,
+		"percentStatBonus":{
+			"culture":33
+		},
+		"requiredBuilding":"Museum",
+		"maintenance":3,
+		"requiredTech":"Advanced Communication",
+		"uniques":[
+			"Destroyed when the city is captured"
+		]
+	},
+	{
+		"name":"Military Base",
+		"cityStrength":12,
+		"cityHealth":25,
+		"hurryCostModifier":25,
+		"requiredBuilding":"Armory",
+		"requiredTech":"Advanced Communication",
+		"uniques":[
+			"Destroyed when the city is captured"
+		]
+	},
+	{
+		"name":"Secret Laboratory",
+		"maintenance":1,
+		"specialistSlots":{
+			"Scientist":1
+		},
+		"hurryCostModifier":25,
+		"uniques":[
+			"Comment [Enables construction of Special Tech]"
+		],
+		"requiredTech":"Chemistry"
+	},
+	{
+		"name":"Hospital",
+		"food":5,
+		"requiredBuilding":"Aqueduct",
+		"maintenance":2,
+		"hurryCostModifier":0,
+		"requiredTech":"Chemistry"
+	},
+	{
+		"name":"Public School",
+		"science":3,
+		"specialistSlots":{
+			"Scientist":1
+		},
+		"requiredBuilding":"University",
+		"maintenance":3,
+		"hurryCostModifier":0,
+		"uniques":[
+			"[+1 Science] per [2] population [in this city]"
+		],
+		"requiredTech":"Advanced Zoning"
+	},
+	{
+		"name":"Military Academy",
+		"hurryCostModifier":0,
+		"maintenance":1,
+		"requiredBuilding":"Armory",
+		"uniques":[
+			"New [Military] units start with [15] XP [in this city]",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech":"Advanced Zoning"
+	},
+	{
+		"name":"Factory",
+		"production":4,
+		"percentStatBonus":{
+			"production":10
+		},
+		"specialistSlots":{
+			"Engineer":2
+		},
+		"requiredBuilding":"Recruitment Office",
+		"maintenance":3,
+		"hurryCostModifier":0,
+		"uniques":[
+			"Provides [1] [Weapons]"
+		],
+		"requiredTech":"Advanced Industry"
+	},
+	{
+		"name":"Stock Exchange",
+		"gold":3,
+		"percentStatBonus":{
+			"gold":25
+		},
+		"specialistSlots":{
+			"Merchant":2
+		},
+		"hurryCostModifier":15,
+		"requiredTech":"Advanced Industry"
+	},
+	{
+		"name":"Bomb Shelter",
+		"maintenance":1,
+		"requiredTech":"Superweapons",
+		"uniques":[
+			"Population loss from nuclear attacks [-75]% [in this city]",
+			"Damage to garrison from nuclear attacks [-75]% [in this city]"
+		]
 	}
-	
 ]
