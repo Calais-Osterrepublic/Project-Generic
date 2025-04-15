@@ -28,7 +28,11 @@
     },
 
     {
-        "name": "Air",
+        "name": "Air to Air",
         "movementType": "Air"
-    }  
+    },
+    {
+        "name": "Air to Surface",
+        "movementType": "Air"
+    }
 ]
