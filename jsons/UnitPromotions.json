@@ -1,49 +1,20 @@
 [
-	{
-		"name": "Experianced",
-		"uniques": [
-			"[+10]% Strength"
-		],
-		"unitTypes": [
-			"Irregular Infantry"
-		],
-		"row": 0,
+  {
+		"name": "Recover Instantly",
+		"uniques": ["[This Unit] heals [50] HP", "Doing so will consume this opportunity to choose a Promotion"],
+		"unitTypes": ["Land Melee", "Land Ranged"],
+		"innerColor": [195,53,43],
+		"outerColor": [253,236,234],
+        "row": 0,
         "column": 0
-	},
-	{
-		"name": "Veteran",
-		"prerequisites": ["Experianced"],
-		"uniques": [
-			"[+10]% Strength"
-		],
-		"unitTypes": [
-			"Irregular Infantry"
-		],
-		"row": 0,
+  },
+  {
+		"name": "Repair Instantly",
+		"uniques": ["[This Unit] heals [50] HP <in [Friendly] tiles>", "Doing so will consume this opportunity to choose a Promotion"],
+		"unitTypes": ["Water Melee", "Water Ranged"],
+		"innerColor": [195,53,43],
+		"outerColor": [253,236,234],
+        "row": 0,
         "column": 1
-	},
-	{
-		"name": "Master",
-		"prerequisites": ["Veteran"],
-		"uniques": [
-			"[+10]% Strength"
-		],
-		"unitTypes": [
-			"Irregular Infantry"
-		],
-		"row": 0,
-        "column": 2
-	},
-	{
-		"name": "Guru",
-		"prerequisites": ["Master"],
-		"uniques": [
-			"[+10]% Strength"
-		],
-		"unitTypes": [
-			"Irregular Infantry"
-		],
-		"row": 0,
-        "column": 3
-	}
+  }
 ]
